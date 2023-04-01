@@ -349,12 +349,12 @@ public class Game
     }
 
     private static void showMap() {
-        ImagePlus imagePlus = IJ.openImage("POO/Capitulo8/zuul-better/images/mapa.png");
+        ImagePlus imagePlus = IJ.openImage("images/mapa.png");
         imagePlus.show();
     }
 
     private static void showChoose() {
-        ImagePlus imagePlus = IJ.openImage("POO/Capitulo8/zuul-better/images/personagens.jpg");
+        ImagePlus imagePlus = IJ.openImage("images/personagens.jpg");
         imagePlus.show();
     }
 }

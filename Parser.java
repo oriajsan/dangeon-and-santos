@@ -94,15 +94,15 @@ public class Parser
     public String setClass() {
         boolean fim = false;
         String inpu;
-        String[] classes = new String[]{"Mage", "Arqueire", "Guerreire", "Ladine"};
+        String[] classes = new String[]{"MAGE", "ARQUEIRE", "GUERREIRE", "LADINE"};
         ArrayList<String> classList = new ArrayList<String>();
         Collections.addAll(classList, classes);
         System.out.println("Qual será a classe de seu personagem? ");
-        System.out.println("Opções: " + classList);
+        System.out.println("Opções: Mage, Arqueire, Guerreire e Ladine");
         System.out.print("> ");
         inpu = reader.nextLine();
         while (!fim){
-            if(classList.contains(inpu)){
+            if(classList.contains(inpu.toUpperCase())){
                 fim = true;
             }else{
                 System.out.println("Classe invalida! tente novamente");
